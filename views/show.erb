@@ -1,0 +1,7 @@
+<h1><%= @groceries["name"] %></h1>
+
+<ul>
+  <% @comments.each do |comment| %>
+    <li><%= comment["body"] %></li>
+  <% end %>
+</ul>

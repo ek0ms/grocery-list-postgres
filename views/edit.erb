@@ -1,0 +1,12 @@
+<h1>Item Edit</h1>
+
+<fieldset>
+  <legend> Edit Your Item Below </legend>
+  <form action="/groceries/<%=@groceries["id"]%>/edit" method="post">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" value="<%=@groceries["name"]%>"
+      required/>
+    <input type="hidden" name="_method" value="PATCH">
+    <input type="submit" value="Submit">
+  </form>
+</fieldset>
